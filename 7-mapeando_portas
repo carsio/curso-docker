@@ -1,0 +1,21 @@
+mapeando portas
+
+// 8080 porta que eu vou expor no host - 80 porta do container que quero mapear
+# docker container run -p 8080:80 nginx
+
+Saída esperada
+
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+000eee12ec04: Pull complete 
+eb22865337de: Pull complete 
+bee5d581ef8b: Pull complete 
+Digest: sha256:50cf965a6e08ec5784009d0fccb380fc479826b6e0e65684d9879170a9df8566
+Status: Downloaded newer image for nginx:latest
+172.17.0.1 - - [24/Nov/2019:01:04:56 +0000] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+172.17.0.1 - - [24/Nov/2019:01:04:56 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+2019/11/24 01:04:56 [error] 7#7: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080"
+172.17.0.1 - - [24/Nov/2019:01:05:55 +0000] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+172.17.0.1 - - [24/Nov/2019:01:05:55 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0" "-"
+2019/11/24 01:05:55 [error] 7#7: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080"
+

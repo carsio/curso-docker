@@ -2,7 +2,7 @@ Checar instalação Docker
 
 Comando terminal
 
-$ docker container run hello-world
+# docker container run hello-world
 
 Saída esperada
 

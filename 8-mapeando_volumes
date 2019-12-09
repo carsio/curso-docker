@@ -1,0 +1,7 @@
+mapeando volumes
+
+# mkdir html
+
+// flag -v é utilizada para mapear volumes, do lado esquedo o diretório do host e do lado direito o diretório do container que irá apontar para o diretório do host
+
+# docker container run -p 8080:80 -v $(pwd)/html:usr/share/nginx/html nginx

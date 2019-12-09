@@ -1,0 +1,21 @@
+comando # docker container ps
+
+// verifica quais os containers sendo executado no computador
+# docker container ps
+
+Saída esperada
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+
+// exibe lista com todos os containers inclusive os parados
+# docker container ps -a
+
+Saída esperada
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                         PORTS               NAMES
+b899a14078a9        debian              "bash --version"    7 minutes ago       Exited (0) 7 minutes ago                           eager_edison
+c9c892edf54c        hello-world         "/hello"            16 minutes ago      Exited (0) 16 minutes ago                          charming_wozniak
+37352adae9fc        hello-world         "/hello"            About an hour ago   Exited (0) About an hour ago                       sleepy_easley
+
+

@@ -1,0 +1,29 @@
+comando # docker run 
+
+Faz uma concatenação de 4 comandos e sempre cria novos containers.
+
+// baixa a imagem do repositório
+# docker image pull
+
+// faz a criação do container
+# docker container create 
+
+// inializa o container
+# docker container start 
+
+// faz a execução do container em modo interativo
+# docker container exec
+
+// remove o container após a execução do mesmo
+# docker container run --rm debian bash --version
+
+// -i para modo interativo -t para acessar o terminal
+# docker container run -it debin bash
+
+// help
+# docker container run --help
+
+// atribuir nome para um container
+# docker container run --name mydeb -it debian bash
+
+

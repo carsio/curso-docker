@@ -1,0 +1,10 @@
+reutilizando containers
+
+// para listar os containers
+# docker container ls 
+
+// para listar todos os containers
+# docker container ls -a
+
+// -a attach - irá pegar o terminal e anexar -i para modo interativo
+# docker container start -ai mydeb

@@ -1,0 +1,31 @@
+Modos de execução
+
+- Modo Interativo
+	Utilizado para teste, configurações e experimentos.	
+
+- Modo Deamon
+	Roda em background.
+
+Modo Interativo
+
+Para testar o modo interativo podemos executar o comando
+
+# docker container run debian bash --version
+
+Saída esperada
+
+Unable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+16ea0e8c8879: Pull complete 
+Digest: sha256:79f0b1682af1a6a29ff63182c8103027f4de98b22d8fb50040e9c4bb13e3de78
+Status: Downloaded newer image for debian:latest
+GNU bash, version 5.0.3(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+
+
+
